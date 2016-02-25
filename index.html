@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang=en>
  <head>
-		<meta charset=utf-8>
+		<meta charset="utf-8">
 		<meta http-equiv=X-UA-Compatible content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name=description content="">
 		<meta name=author content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>s02121225</title>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.css">
-		<link href="http://cdn.bootcss.com/animate.css/3.3.0/animate.css" rel="stylesheet">
-		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" rel="stylesheet">		 
+		<title>JJHuang</title>
+		<link rel="stylesheet" href="css/bootstrap.css">		
+		<link rel="stylesheet" href="js/bootstrap.min.js">	
+		<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.3.0/animate.css">	 
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
  </head>
   <body id="myPage">
 		<div class="navbar-wrapper">
 			<div class="container">
-				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 					<div class="navbar-header">
-						<button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=#navbar aria-expanded="false">						 
+						<button type="button" class="navbar-toggle collapsed" data-toggle=collapse data-target="#navbar" aria-expanded="false">	
+						<span class="sr-only">Toggle navigation</span>					 
 						<span class="icon-bar"></span> 
 						<span class="icon-bar"></span> 
 						<span class="icon-bar"></span>
 						</button> 
-						<a class="navbar-brand" href="#myPage">Chun-Chieh Huang</a>
-					</div>	
+						<img src="photo/logo.png" class="img-responsive">
+ 					</div>	
 						<div id="navbar" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href ="#myPage">Home</a></li>
-								<li><a href ="#about me">about me</a></li>
-								<li><a href ="#project">project</a></li>							
-								<li><a href ="#contact">dont know</a></li>
+								<li><a href ="#about me">About me</a></li>
+								<li><a href ="#assignment">My Assignment</a></li>
+								<li><a href ="#project">Final Project</a></li>
 							</ul>
 						</div>
 				</nav>		
 			</div>		
 		</div>
-	<div>	
-  	  Hello World
-  	 </div> 
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>	
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  // Add smooth scrolling to all links in navbar + footer link
+			  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+			    // Prevent default anchor click behavior
+			    event.preventDefault();
+
+			    // Store hash
+			    var hash = this.hash;
+
+			    // Using jQuery's animate() method to add smooth page scroll
+			    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+			    $('html, body').animate({
+			      scrollTop: $(hash).offset().top
+			    }, 900, function(){
+			   
+			      // Add hash (#) to URL when done scrolling (default click behavior)
+			      window.location.hash = hash;
+			    });
+			  });
+			})
+		</script>
   </body>
 </html>  	
