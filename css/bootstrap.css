@@ -6882,6 +6882,7 @@ button.close {
     .featurette {
         padding-top: 20px; /* Vertically center images part 1: add padding above and below text. */
         overflow: hidden; /* Vertically center images part 2: clear their floats. */
+        margin: 5%;
     }
 /* Give some space on the sides of the floated elements so text doesn't run right into it. */
     .featurette-image.pull-left {
@@ -6896,4 +6897,7 @@ button.close {
         font-weight: 300;
         line-height: 1;
         letter-spacing: -1px;
+    }
+    body {
+        padding-bottom: 40px;
     }
