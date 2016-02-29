@@ -9,6 +9,17 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+body.home a.home,
+body.personal a.personal,
+body.corporate a.corporate,
+body.about a.about,
+body.delivery a.delivery,
+body.specials a.specials {
+/**your custom styles here**/
+color: #FFF;
+background: #0075c1;
+}
+
 body {
   margin: 0;
 }
@@ -82,6 +93,9 @@ sup {
 }
 sub {
   bottom: -.25em;
+}
+.navbar-wrapper img{
+      margin-left: 10%;
 }
 img {
   border: 0;
@@ -6876,29 +6890,29 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 /* Featurettes---------------------------------------------------- */
-    .featurette-divider {
-        margin: 30px 0; /* Space out the Bootstrap <hr> more */
-    }
-    .featurette {
-        padding-top: 20px; /* Vertically center images part 1: add padding above and below text. */
-        overflow: hidden; /* Vertically center images part 2: clear their floats. */
-        margin: 5%;
-        padding-bottom: 20px;
-    }
+.featurette-divider {
+      margin: 30px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+      padding-top: 40px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+      margin: 5%;
+      padding-bottom: 20px;
+}
 /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-    .featurette-image.pull-left {
-        margin-right: 40px;
-    }
-    .featurette-image.pull-right {
-        margin-left: 40px;
-    }
+.featurette-image.pull-left {
+      margin-right: 40px;
+}
+.featurette-image.pull-right {
+      margin-left: 40px;
+}
 /* Thin out the marketing headings */
-    .featurette-heading {
-        font-size: 50px;
-        font-weight: 300;
-        line-height: 1;
-        letter-spacing: -1px;
-    }
-    body {
-        padding-bottom: 40px;
-    }
+.featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+}
+body {
+      padding-bottom: 40px;
+}
